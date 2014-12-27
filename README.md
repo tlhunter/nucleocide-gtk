@@ -9,19 +9,19 @@ This repo is more or less for my own personal reference.
 
 ### GTK3: Dorian
 
-![screenshots/gtk3.png](GTK3)
+![GTK3](screenshots/gtk3.png)
 
 ### GTK2: BSM Simple Dark
 
-![screenshots/thunar-gtk2.png](GTK2)
+![GTK2](screenshots/thunar-gtk2.png)
 
 ### Window Decoration: Axiomd
 
-![screenshots/window-decoration-axiomd.png](Decoration)
+![Decoration](screenshots/window-decoration-axiomd.png)
 
 ### Overall Desktop
 
-![screenshots/system.png](Desktop)
+![Desktop](screenshots/system.png)
 
 ## Installation
 
