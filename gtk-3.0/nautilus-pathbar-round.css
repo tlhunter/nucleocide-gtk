@@ -1,0 +1,324 @@
+/*****************PathBar Linked Buttons**************************/
+
+
+NautilusPathBar.linked .button,
+NautilusPathBar .button {
+    background-image: linear-gradient(to bottom,
+                                      rgba(0,0,0,0.08),
+                                      rgba(0,0,0,0.0) 20%,
+                                      rgba(0,0,0,0.0) 98%,
+                                      rgba(255,255,255,0.16)
+                                      );
+
+    border-width: 1px;
+    border-radius: 17px;
+    border-style: solid;
+
+    border-color: transparent;
+
+	/* border and inset */
+    box-shadow: 0 1px alpha(black, 0.26) inset,
+				0 -1px alpha(white, 0.08) inset,
+				0 3px alpha(black, 0.08) inset,
+				inset 1px 0 alpha(black, 0.1);
+background-color:alpha(black,0.28);
+border-image: none;
+	color: shade(@theme_fg_dark_color, 0.90);
+
+	transition: 60ms ease-out;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+NautilusPathBar.linked .button:nth-child(even),
+NautilusPathBar .button:nth-child(even) {
+    background-color:alpha(black,0.325);
+}
+
+NautilusPathBar.linked .button:hover {
+
+   background-image: linear-gradient(to bottom,
+                                      rgba(0,0,0,0.12),
+                                      rgba(0,0,0,0.0) 20%,
+                                      rgba(0,0,0,0.0) 98%,
+                                      rgba(0,0,0,0.12)
+                                      );
+background-color:alpha(black,0.32);
+
+background-image: -gtk-gradient (radial,
+										center 1.5, 0,
+										center 1.3, 0.7,
+										from(rgba(255,255,255,0.6)),
+										to(transparent));
+
+	border-image: 			none;
+    border-color: transparent;
+border-radius: 17px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+
+    box-shadow: 0 1px alpha(black, 0.26) inset,
+				0 -1px alpha(@theme_selected_bg_color, 0.94) inset,
+				0 3px alpha(black, 0.08) inset,
+				1px 0 alpha(black, 0.18) inset;
+}
+
+NautilusPathBar.linked .button:hover:nth-child(even) {
+	background-color:alpha(black,0.365);
+}
+
+NautilusPathBar.linked .button:active{
+
+   background-image: url("assets/arrow-up-hover-arrow.svg");
+background-color:alpha(black,0.46);
+/*background-color: mix(shade(@theme_base_color, 0.8), shade(@theme_selected_bg_color, 1.0),0.02);*/
+	border-image: 			none;
+    border-color: transparent;
+border-radius: 17px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    box-shadow: 0 1px alpha(black, 0.26) inset,
+				0 -1px alpha(white, 0.1) inset,
+				0 3px alpha(black, 0.08) inset,
+				inset -1px 0 alpha(black, 0.14);
+	background-image: url("assets/arrow-up-hover-arrow.svg"),
+						linear-gradient(to bottom,
+                                      rgba(0,0,0,0.08),
+                                      rgba(0,0,0,0.0) 20%,
+                                      rgba(0,0,0,0.0) 98%,
+                                      rgba(255,255,255,0.18)
+                                      );
+
+transition: 60ms ease-out;
+border-image: none;
+background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+
+NautilusPathBar.linked .button:active:hover {
+
+   background-image: url("assets/arrow-up-hover-arrow.svg");
+background-color: mix(shade(@theme_bg_color, 0.5), shade(@theme_selected_bg_color, 1.0),0.03);
+	border-image: 			none;
+    border-color: transparent;
+border-radius: 17px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    box-shadow: 0 1px alpha(black, 0.26) inset,
+				0 -1px alpha(white, 0.1) inset,
+				0 3px alpha(black, 0.08) inset,
+				inset -1px 0 alpha(black, 0.14);
+	background-image: url("assets/arrow-up-hover-arrow.svg"),
+						-gtk-gradient (radial,
+										center 1.5, 0,
+										center 1.3, 0.7,
+										from(rgba(255,255,255,0.6)),
+										to(transparent)),
+						linear-gradient(to bottom,
+                                      rgba(0,0,0,0.08),
+                                      rgba(0,0,0,0.0) 20%,
+                                      rgba(0,0,0,0.0) 98%,
+                                      rgba(255,255,255,0.2)
+                                      );
+
+transition: 60ms ease-out;
+border-image: none;
+background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+NautilusPathBar.linked .button *:active,
+NautilusPathBar.linked .button *:active:hover {
+	/*color: shade(@theme_fg_dark_color, 0.95);*/
+	text-shadow: 1px 1px @theme_shadow_dark_color;
+}
+
+NautilusPathBar.linked .button:insensitive{
+
+   background-image: url("assets/stripe-3.png"),
+						linear-gradient(to bottom,
+                                      rgba(0,0,0,0.08),
+                                      rgba(0,0,0,0.0) 20%,
+                                      rgba(0,0,0,0.0) 90%,
+                                      rgba(0,0,0,0.12)
+                                      );
+background-color:alpha(white, 0.01);
+	border-image: 			none;
+    border-color: transparent;
+border-radius: 17px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    box-shadow: 0 1px alpha(black, 0.26) inset,
+				0 -1px alpha(white, 0.06) inset,
+				0 3px alpha(black, 0.08) inset,
+				-1px 0 alpha(black, 0.14) inset;
+	background-size: 6px;
+    background-repeat: repeat;
+    background-position: top left;
+}
+
+/* Middle toolbar-button */
+NautilusPathBar.linked .button:nth-child(even),
+NautilusPathBar.linked .button,
+NautilusPathBar.linked .button:hover,
+NautilusPathBar.linked .button:hover:focus,
+NautilusPathBar.linked .button:active,
+NautilusPathBar.linked .button:active:hover,
+NautilusPathBar.linked .button:insensitive,
+NautilusPathBar.linked .button:focus,
+NautilusPathBar.linked .button:active:focus {
+
+    border-right-width: 0px;
+    border-left-width:  0px;
+    border-radius: 0;
+    /*padding-left:  6px;
+    padding-right: 6px;*/
+    border-image-width: 0;
+}
+
+/* Leftmost toolbars-button */
+NautilusPathBar.linked .button:first-child,
+NautilusPathBar.linked .button:hover:first-child,
+NautilusPathBar.linked .button:active:first-child,
+NautilusPathBar.linked .button:active:hover:first-child,
+NautilusPathBar.linked .button:focus:first-child,
+NautilusPathBar.linked .button:active:focus:first-child,
+NautilusPathBar.linked .button:insensitive:first-child {
+   /* padding-left:  10px;
+    padding-right: 6px;*/
+    border-left-width: 1px;
+    border-right-width: 0;
+    border-image-width: 0;
+    border-radius: 17px;
+    border-bottom-right-radius: 0;
+
+    border-top-right-radius: 0;
+    box-shadow: 0 1px alpha(black, 0.26) inset,
+				0 -1px alpha(white, 0.08) inset,
+				0 3px alpha(black, 0.08) inset;
+}
+
+/* Leftmost toolbars-button normal */
+NautilusPathBar.linked .button:hover:first-child,
+NautilusPathBar.linked .button:focus:hover:first-child{
+    border-image-width: 0;
+    box-shadow: 0 1px alpha(black, 0.26) inset,
+				0 -1px alpha(@theme_selected_bg_color, 0.94) inset,
+				0 3px alpha(black, 0.08) inset;
+}
+
+/* Leftmost toolbars-button active */
+NautilusPathBar.linked .button:active:first-child,
+NautilusPathBar.linked .button:active:hover:first-child {
+    border-image-width: 0;
+    box-shadow: 0 1px alpha(black, 0.26) inset,
+				0 -1px alpha(white, 0.1) inset,
+				0 3px alpha(black, 0.08) inset;
+}
+
+/* Leftmost toolbars-button insensitive */
+NautilusPathBar.linked .button:insensitive:first-child,
+NautilusPathBar.linked .button:insensitive:first-child:backdrop {
+    border-image-width: 0;
+    box-shadow: 0 1px alpha(black, 0.26) inset,
+				0 -1px alpha(white, 0.06) inset,
+				0 3px alpha(black, 0.08) inset;
+}
+
+/* Rightmost toolbar-button */
+NautilusPathBar.linked .button:last-child:nth-child(even),
+NautilusPathBar.linked .button:last-child,
+NautilusPathBar.linked .button:hover:last-child,
+NautilusPathBar.linked .button:active:last-child,
+NautilusPathBar.linked .button:active:hover:last-child,
+NautilusPathBar.linked .button:focus:last-child,
+NautilusPathBar.linked .button:active:focus:last-child,
+NautilusPathBar.linked .button:insensitive:last-child {
+    /*padding-left:  6px;
+    padding-right: 10px;*/
+    border-left-width: 0;
+    border-image-width: 0;
+    border-width: 1px 1px 1px 0;
+    border-radius: 17px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+
+    box-shadow: 0 1px alpha(black, 0.26) inset,
+				0 -1px alpha(white, 0.08) inset,
+				0 3px alpha(black, 0.08) inset,
+				inset 1px 0 alpha(black, 0.14);
+}
+
+/* Rightmost toolbar-button normal */
+NautilusPathBar.linked .button:hover:last-child,
+NautilusPathBar.linked .button:focus:hover:last-child {
+
+    border-image-width: 0;
+    box-shadow: 0 1px alpha(black, 0.26) inset,
+				0 -1px alpha(@theme_selected_bg_color, 0.94) inset,
+				0 3px alpha(black, 0.08) inset,
+				1px 0 alpha(black, 0.18) inset;
+}
+
+/* Rightmost toolbar-button active */
+NautilusPathBar.linked .button:active:last-child,
+NautilusPathBar.linked .button:active:hover:last-child {
+
+    border-image-width: 0;
+	box-shadow: 0 1px alpha(black, 0.26) inset,
+				0 -1px alpha(white, 0.1) inset,
+				0 3px alpha(black, 0.08) inset,
+				inset -1px 0 alpha(black, 0.14);
+
+}
+
+/* Rightmost toolbar-button insensitive */
+NautilusPathBar.linked .button:insensitive:last-child,
+NautilusPathBar.linked .button:insensitive:last-child:backdrop {
+    border-image-width: 0;
+    box-shadow: 0 1px alpha(black, 0.26) inset,
+				0 -1px alpha(white, 0.06) inset,
+				0 3px alpha(black, 0.08) inset,
+				-1px 0 alpha(black, 0.14) inset;
+}
+
+
+/* Linked single toolbar-button */
+NautilusPathBar.linked .button:only-child,
+NautilusPathBar.linked .button:hover:only-child,
+NautilusPathBar.linked .button:active:only-child,
+NautilusPathBar.linked .button:active:hover:only-child,
+NautilusPathBar.linked .button:focus:only-child,
+NautilusPathBar.linked .button:focus:hover:only-child,
+NautilusPathBar.linked .button:insensitive:only-child {
+    padding-left:  10px;
+    padding-right: 10px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-radius: 17px;
+    border-image-width: 0;
+}
+
+/* Linked single toolbar-button normal */
+NautilusPathBar.linked .button:hover:only-child,
+NautilusPathBar.linked .button:hover:focus:only-child{
+    border-image-width: 0;
+}
+
+/* Linked single toolbar-button active */
+NautilusPathBar.linked .button:active:only-child,
+NautilusPathBar.linked .button:active:hover:only-child {
+    border-image-width: 0;
+
+}
+
+/* Linked single toolbar-button insensitive */
+NautilusPathBar.linked .button:insensitive:only-child,
+NautilusPathBar.linked .button:insensitive:only-child:backdrop {
+    border-image-width: 0;
+}

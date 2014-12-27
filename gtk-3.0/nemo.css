@@ -1,0 +1,401 @@
+
+.nemo-inactive-pane .view,
+.nemo-inactive-pane NemoIconView,
+.nemo-inactive-pane NemoIconView .view {
+    background-color: #323232;
+    color: alpha(currentColor, 0.55);
+}
+
+.nemo-inactive-pane .view:selected,
+.nemo-inactive-pane .nemo-canvas-item:selected {
+    background-color: @theme_unfocused_selected_bg_color;
+    color: @theme_unfocused_selected_fg_color;
+}
+
+.nemo-inactive-pane .expander.view:selected {
+    background-color: @theme_unfocused_selected_bg_color;
+    color: @internal_element_color;
+    border-color: @internal_element_color;
+}
+
+NemoLocationEntry.entry {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.nemo-canvas-item {
+    border-radius: 5px;
+}
+
+.nemo-desktop.nemo-canvas-item {
+    color: @theme_selected_fg_color;
+    text-shadow: 1px 1px black;
+}
+
+.nemo-desktop.nemo-canvas-item:active {
+    color: @theme_text_color;
+}
+
+.nemo-desktop.nemo-canvas-item:selected {
+  color: #050505;
+  text-shadow: 0 1px alpha(white, 0.28);
+}
+
+.nemo-desktop.nemo-canvas-item:active,
+.nemo-desktop.nemo-canvas-item:prelight,
+.nemo-desktop.nemo-canvas-item:selected {
+    text-shadow: none;
+}
+
+/**** FIXES FOR NAUTILUS VIEW AND DESKTOP ***/
+/* Fixes issue with Nautilus drawing the .background image inside the view after closing a tab */
+NemoWindow NemoIconView,
+NemoWindow NemoIconView .view {
+	background-color: shade(@theme_base_color, 1.1);
+}
+
+NemoWindow NemoIconView:backdrop,
+NemoWindow NemoIconView .view:backdrop {
+	background-color: shade(@theme_base_color, 1.1);
+}
+
+/* Fixes issue with Nautilus drawing the above view color on the desktop */
+NemoDesktopWindow NemoDesktopIconView,
+NemoDesktopWindow NemoDesktopIconView .view {
+	background-color: transparent;
+}
+
+NemoDesktopWindow NemoDesktopIconView:backdrop,
+NemoDesktopWindow NemoDesktopIconView .view:backdrop {
+	background-color: transparent;
+}
+
+/* Fixes issue with Nemo drawing the .background image on the desktop */
+NemoDesktopWindow.background {
+	background-image: none;
+	background-color: @theme_bg_color;
+}
+
+NemoDesktopWindow.background:backdrop {
+	background-image: none;
+	background-color: @theme_bg_color;
+}
+
+
+NemoNotebook.notebook tab.top:active {
+    padding: 1px 12px 1px 14px;
+}
+/***   ***/
+.nemo-inactive-pane .notebook {
+engine: unico;
+	border-top-color: shade(#181818, 1.04);
+    border-right-color: shade(#393939, 0.92);
+    border-bottom-color: shade(#3b3b3b, 0.8);
+    border-left-color: shade(#161616, 0.96);
+	border-radius: 5px;
+    background-color: #323232;
+}
+
+.nemo-inactive-pane .notebook tab.top:active,
+.nemo-inactive-pane .notebook tab:active {
+	background-image: linear-gradient(to bottom,
+										rgba(0,0,0,0.12),
+										transparent
+										),
+					  linear-gradient(to bottom,
+										#323232,
+										#323232);
+	background-size: auto, auto;
+}
+
+.nemo-inactive-pane .notebook tab.top:active {
+    border-image: url("assets/tab-gtk-7.png") 3 15 2 15 / 3px 15px 2px 15px stretch;
+}
+
+.nemo-inactive-pane .notebook tab.top:active:focus {
+    border-image: url("assets/tab-gtk-7.png") 3 15 2 15 / 3px 15px 2px 15px stretch;
+}
+
+.nemo-inactive-pane .scrollbar.trough,
+.nemo-inactive-pane .notebook .scrollbar.trough {
+	background-color: #323232;
+}
+
+.nemo-inactive-pane column-header.button,
+.nemo-inactive-pane column-header .button,
+.nemo-inactive-pane column-header.button:insensitive,
+.nemo-inactive-pane column-header .button:insensitive,
+.nemo-inactive-pane column-header.button:hover,
+.nemo-inactive-pane column-header .button:hover,
+.nemo-inactive-pane .notebook column-header.button,
+.nemo-inactive-pane .notebook column-header .button,
+.nemo-inactive-pane .notebook column-header.button:insensitive,
+.nemo-inactive-pane .notebook column-header .button:insensitive,
+.nemo-inactive-pane .notebook column-header.button:hover,
+.nemo-inactive-pane .notebook column-header .button:hover {
+	background-color: alpha(black, 0.35);
+    background-image: linear-gradient(to bottom,
+						#323232,
+						shade(#323232, 0.72)
+						);
+}
+
+.nemo-inactive-pane column-header.button:hover,
+.nemo-inactive-pane column-header .button:hover,
+.nemo-inactive-pane .notebook column-header.button:hover,
+.nemo-inactive-pane .notebook column-header .button:hover {
+	background-color: alpha(black, 0.15);
+    background-image: linear-gradient(to bottom,
+						shade(#323232, 0.82),
+						shade(#323232, 1.04) 40%,
+						shade(#323232, 1.04) 80%,
+						shade(#323232, 0.92)
+						);
+}
+
+.nemo-inactive-pane column-header.button:active,
+.nemo-inactive-pane column-header .button:active,
+.nemo-inactive-pane column-header.button:active:hover,
+.nemo-inactive-pane column-header .button:active:hover,
+.nemo-inactive-pane .notebook column-header.button:active,
+.nemo-inactive-pane .notebook column-header .button:active,
+.nemo-inactive-pane .notebook column-header.button:active:hover,
+.nemo-inactive-pane .notebook column-header .button:active:hover {
+	background-color: alpha(black, 0.35);
+    background-image: linear-gradient(to bottom,
+						shade(#323232, 0.72),
+						shade(#323232, 0.94) 40%,
+						shade(#323232, 0.94) 80%,
+						shade(#323232, 0.82)
+						);
+}
+
+.nemo-inactive-pane column-header.button,
+.nemo-inactive-pane column-header .button,
+.nemo-inactive-pane column-header.button:hover,
+.nemo-inactive-pane column-header .button:hover,
+.nemo-inactive-pane column-header.button:focus,
+.nemo-inactive-pane column-header .button:focus,
+.nemo-inactive-pane column-header.button:focus:hover,
+.nemo-inactive-pane column-header .button:focus:hover,
+.nemo-inactive-pane column-header.button:active,
+.nemo-inactive-pane column-header .button:active,
+.nemo-inactive-pane column-header.button:active:hover,
+.nemo-inactive-pane column-header .button:active:hover,
+.nemo-inactive-pane column-header.button:active:hover:focus,
+.nemo-inactive-pane column-header .button:active:hover:focus,
+.nemo-inactive-pane column-header.button:active:focus,
+.nemo-inactive-pane column-header .button:active:focus,
+.nemo-inactive-pane .notebook column-header.button,
+.nemo-inactive-pane .notebook column-header .button,
+.nemo-inactive-pane .notebook column-header.button:hover,
+.nemo-inactive-pane .notebook column-header .button:hover,
+.nemo-inactive-pane .notebook column-header.button:focus,
+.nemo-inactive-pane .notebook column-header .button:focus,
+.nemo-inactive-pane .notebook column-header.button:focus:hover,
+.nemo-inactive-pane .notebook column-header .button:focus:hover,
+.nemo-inactive-pane .notebook column-header.button:active,
+.nemo-inactive-pane .notebook column-header .button:active,
+.nemo-inactive-pane .notebook column-header.button:active:hover,
+.nemo-inactive-pane .notebook column-header .button:active:hover,
+.nemo-inactive-pane .notebook column-header.button:active:hover:focus,
+.nemo-inactive-pane .notebook column-header .button:active:hover:focus,
+.nemo-inactive-pane .notebook column-header.button:active:focus,
+.nemo-inactive-pane .notebook column-header .button:active:focus {
+   border-image: linear-gradient(to top,
+                                  alpha(black,0.25),
+                                  shade(#2a2a2a, 0.9) 8%,
+                                  shade(#2a2a2a, 0.6)
+                                  ) 0 1 1 0;
+    border-width: 0 1px 1px 0;
+    border-radius: 0;
+    border-style: solid;
+    border-color: transparent;
+    box-shadow: inset 1px 0 alpha(white, 0.033);
+}
+
+/* Fixes 1st opened notebook-tab from having a border drawn across it */
+NemoNotebook .frame {
+    border-width: 1px 0 0 0px;
+    border-color:shade(@theme_base_color, 1.1);
+    background-color: shade(@theme_base_color, 1.1);
+    background-image: none;
+    border-image:none;
+}
+
+NemoNotebook .frame:backdrop {
+    border-width: 1px 0 0 0;
+    background-color: shade(@theme_base_color, 1.1);
+    background-image: none;
+    border-color: shade(@theme_base_color, 1.1);
+    border-image:none;
+}
+
+NemoNotebook.notebook {
+    border-right-width: 0;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    border-top-width: 1px;
+    border-radius: 0;
+}
+
+.nemo-inactive-pane .notebook,
+.nemo-active-pane .notebook {
+    border-right-width: 1px;
+    border-radius: 5px;
+}
+
+/************************* Pathbar ************************/
+NemoPathbarButton,
+NemoPathbarButton:backdrop {
+	padding: 0px 0px 0px 3px;
+    border-image: 	none;
+	border-style: solid;
+    border-radius: 0px;
+    border-width: 0px;
+	border-color: transparent;
+}
+
+NemoPathbarButton,
+NemoPathbarButton:backdrop,
+NemoPathbarButton:backdrop:hover {
+	background-image: linear-gradient(to right,
+                                      alpha(black, 0.10),
+                                      transparent
+                                      ),
+                       linear-gradient(to left,
+                                      alpha(white, 0.024),
+                                      alpha(white, 0.0) 30px,
+                                      alpha(white, 0.0)
+                                      ),
+                       linear-gradient(to bottom,
+										rgba(255,255,255, 0.07),
+										rgba(255,255,255, 0.0) 25%,
+										rgba(255,255,255, 0.0)
+										),
+					linear-gradient(to bottom,
+                                      @button_raised_color_a,
+                                      @button_raised_color_b 40%,
+                                      @button_raised_color_c
+                                      );
+	background-color: transparent;
+	border-style: solid;
+    border-radius: 0px;
+    border-width: 0;
+    border-color: alpha(black, 0.23);
+	box-shadow: 0 1px alpha(white, 0.09) inset,
+				0 2px alpha(white, 0.02) inset,
+				0 -1px alpha(black, 0.23) inset,
+				0 -2px alpha(black, 0.04) inset,
+				-1px 0 alpha(black, 0.24) inset,
+				-2px 0 alpha(black, 0.02) inset,
+				1px 0 alpha(white, 0.04) inset,
+				2px 0 alpha(white, 0.02) inset;
+	transition: 260ms ease-in;
+}
+
+NemoPathbarButton:hover {
+	background-color: transparent;
+    background-image: linear-gradient(to right,
+                                      alpha(black, 0.20),
+                                      transparent
+                                      ),
+                       linear-gradient(to left,
+                                      alpha(white, 0.05),
+                                      alpha(white, 0.0) 30px,
+                                      alpha(white, 0.0)
+                                      ),
+                       linear-gradient(to bottom,
+										rgba(255,255,255, 0.07),
+										rgba(255,255,255, 0.0) 25%,
+										rgba(255,255,255, 0.0)
+										),
+                       linear-gradient(to bottom,
+                                      shade(@button_default_gradient_color_a, 1.0),
+                                      shade(@button_default_gradient_color_b, 1.0) 40%,
+                                      shade(@button_default_gradient_color_c, 1.0)
+                                      );
+    border-width: 0;
+    border-color: alpha(black, 0.27);
+	box-shadow: 0 1px alpha(white, 0.11) inset,
+				0 2px alpha(white, 0.02) inset,
+				0 -1px alpha(black, 0.23) inset,
+				0 -2px alpha(black, 0.04) inset,
+				-1px 0 alpha(black, 0.24) inset,
+				-2px 0 alpha(black, 0.02) inset,
+				1px 0 alpha(white, 0.06) inset,
+				2px 0 alpha(white, 0.02) inset;
+	transition: 260ms ease-in;
+}
+
+NemoPathbarButton:active,
+NemoPathbarButton:backdrop:active,
+NemoPathbarButton:backdrop:active:hover {
+    border-width: 0;
+    border-color: alpha(black, 0.24);
+
+	background-color: transparent;
+
+	box-shadow: 0 1px alpha(white, 0.09) inset,
+				0 2px alpha(white, 0.02) inset,
+				0 -1px alpha(black, 0.30) inset,
+				0 -2px alpha(black, 0.04) inset,
+				-1px 0 alpha(black, 0.24) inset,
+				-2px 0 alpha(black, 0.02) inset,
+				1px 0 alpha(white, 0.04) inset,
+				2px 0 alpha(white, 0.02) inset;
+	background-image: linear-gradient(to right,
+                                      alpha(black, 0.18),
+                                      transparent
+                                      ),
+                       linear-gradient(to left,
+                                      alpha(white, 0.02),
+                                      alpha(white, 0.0) 30px,
+                                      alpha(white, 0.0)
+                                      ),
+                       linear-gradient(to bottom,
+                                      rgba(255,255,255,0.0),
+                                      rgba(255,255,255,0.0) 40%,
+                                      rgba(255,255,255,0.055)
+                                      ),
+					linear-gradient(to bottom,
+                                      mix(@button_gradient_color_a, @theme_selected_bg_color, 0.3),
+                                      mix(@button_gradient_color_b, @theme_selected_bg_color, 0.3) 40%,
+                                      mix(@button_gradient_color_c, @theme_selected_bg_color, 0.3)
+                                      );
+	transition: 260ms ease-in;
+}
+
+NemoPathbarButton:active:hover {
+    background-color: transparent;
+    background-image: linear-gradient(to right,
+                                      alpha(black, 0.26),
+                                      transparent
+                                      ),
+                       linear-gradient(to left,
+                                      alpha(white, 0.034),
+                                      alpha(white, 0.0) 30px,
+                                      alpha(white, 0.0)
+                                      ),
+                       linear-gradient(to bottom,
+                                      rgba(255,255,255,0.0),
+                                      rgba(255,255,255,0.0) 40%,
+                                      rgba(255,255,255,0.055)
+                                      ),
+					linear-gradient(to bottom,
+                                      mix(shade(@button_gradient_active_c,0.9), @theme_selected_bg_color, 0.35),
+                                     mix(shade(@button_gradient_active_b, 0.9), @theme_selected_bg_color, 0.35) 40%,
+                                      mix(shade(@button_gradient_active_a, 0.9), @theme_selected_bg_color, 0.35)
+										);
+    border-width: 0;
+    border-color: alpha(black, 0.26);
+	box-shadow: 0 1px alpha(white, 0.11) inset,
+				0 2px alpha(white, 0.02) inset,
+				0 -1px alpha(black, 0.33) inset,
+				0 -2px alpha(black, 0.04) inset,
+				-1px 0 alpha(black, 0.24) inset,
+				-2px 0 alpha(black, 0.02) inset,
+				1px 0 alpha(white, 0.06) inset,
+				2px 0 alpha(white, 0.02) inset;
+	transition: 260ms ease-in;
+}

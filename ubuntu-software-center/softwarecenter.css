@@ -1,0 +1,114 @@
+@define-color light-aubergine #0a0a0a;
+@define-color super-light-aubergine #1a1a1a;
+
+/* 
+   do not use text-shadow until bugzilla.gnome.org bug #686209 is 
+   fixed - its leaking memory
+*/
+
+
+#featured-star {
+    border-color: #F89516;  /* yellow */
+    color: #FFC51D;         /* orange */
+}
+
+.grid-lines {
+    border-color: shade (@light-aubergine, 1.024);
+}
+
+#screenshot-preview {
+    border-color: #000;
+    color: #ababab;
+    border-width: 2px;
+    border-radius: 3px;
+}
+
+.backforward-left-button {
+    border-radius: 3px 0 0 3px;
+}
+
+.backforward-right-button {
+    border-radius: 0 3px 3px 0;
+}
+
+.subtle,
+#subtle-label {
+    -GtkWidget-link-color: #00A68E;
+    -GtkWidget-visited-link-color: shade(#00a68e, 0.85);
+    color: #5a5a5a; /* non-link text color */
+    text-shadow: 0 1 2 rgba(0,0,0,0.26);
+}
+
+.cellrenderer-button {
+    border-radius: 3px;
+}
+
+.cellrenderer-avgrating-label {
+    color: #8E8E8E; /* dark gray */
+}
+
+.cellrenderer-avgrating-label:selected {
+    color: white;
+}
+
+.more-link {
+    -GtkButton-inner-border: 0;
+    -GtkButton-default-border: 0;
+    -GtkButton-default-outside-border: 0;
+    color: shade(#154478, 1.42);
+    background-color: shade (@super-light-aubergine, 0.925);
+    border-color: shade (@super-light-aubergine, 0.875);
+    text-shadow: 0 1 2 rgba(0,0,0,0.32);
+}
+
+.frame-header-title {
+    /* intentionally left blank */
+}
+
+.item-view-separator {
+    border-color: shade (@light-aubergine, 0.9);
+    border-width: 1px;
+}
+
+.light-aubergine-bg {
+    background-color: @light-aubergine;
+}
+
+.super-light-aubergine-bg {
+    background-color: @super-light-aubergine;
+    border-color: shade (@super-light-aubergine, 0.975)
+}
+
+GtkViewport {
+    background-color: transparent;
+    border-width: 0;
+    padding: 0;
+}
+
+GtkTreeView {
+    border-style: solid;
+	border-width:  1px 0px 1px 0px;
+	border-color: shade(@theme_base_color, 1.1);
+	background-color: shade(@theme_base_color, 1.1);
+}
+
+GtkTreeView:hover {
+  color: @theme_fg_color;
+  border-width: 1px 0px 1px 0px;
+  border-style: solid;
+  border-color: alpha(@theme_selected_bg_color, 0.2);
+  background-image: none;
+  background-color:  mix (shade(@theme_base_color, 0.9), @theme_selected_bg_color, 0.2);
+}
+
+GtkTreeView:selected {
+    border-style: solid;
+  border-width:  1px 0px 1px 0px;
+  border-color: @theme_selected_bg_color;
+  background: @theme_selected_bg_color;
+  color: @theme_selected_fg_color;
+}
+
+#toolbar-popup {
+    padding: 0;
+}

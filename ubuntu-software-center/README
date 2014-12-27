@@ -1,0 +1,16 @@
+Ubuntu Software-Center Dorian-Theme Install.
+
+Backup the original folder and name it "software-center.backup":
+'sudo cp /usr/share/software-center /usr/share/software-center.backup'
+
+Install the Dorian software-center theme (This assumes the Dorian-Theme is 
+installed to the recomended location 'usr/share/themes/'):
+'sudo cp /usr/share/themes/dorian-theme/ubuntu-software-center/softwarecenter.css /usr/share/software-center/ui/gtk3/css/softwarecenter.css 
+&& sudo cp /usr/share/themes/dorian-theme/ubuntu-software-center/stipple.png /usr/share/software-center/ui/gtk3/art/stipple.png'
+
+Start/Restart the Ubuntu Software-Center.
+
+To revert the changes:
+'sudo rm -r /usr/share/software-center && mv /usr/share/software-center.backup /usr/share/software-center'
+
+

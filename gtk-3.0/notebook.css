@@ -1,0 +1,415 @@
+/*****************
+ * Notebooks and *
+ * tabs          *
+ *****************/
+.notebook {
+engine: unico;
+
+    padding: 5px 0 0 0;
+-GtkWidget-focus-line-width: 0;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+	border-top-color: shade(@theme_base_color, 1.04);
+    border-right-color: shade(@theme_base_color, 0.92);
+    border-bottom-color: shade(@theme_base_color, 0.8);
+    border-left-color: shade(@theme_base_color, 0.96);
+
+    background-clip: border-box;
+    background-color: shade(@theme_base_color, 1.1);
+
+    -GtkNotebook-tab-overlap: 15;
+    -GtkNotebook-initial-gap: 2;
+}
+
+.notebook GtkViewport {
+    background-color: @theme_base_color;
+}
+/*
+.notebook:backdrop,
+.notebook GtkViewport:backdrop {
+    background-color: @theme_unfocused_base_color;
+    border-color: @unfocused_borders;
+    border-style: solid;
+    border-width: 1px;
+    border-top-color: shade(@theme_unfocused_base_color, 0.8);
+    border-right-color: shade(@theme_unfocused_base_color, 0.8);
+    border-bottom-color: shade(@theme_unfocused_base_color, 0.65);
+    border-left-color: shade(@theme_unfocused_base_color, 0.8);
+}*/
+
+
+/* close button styling */
+/*
+.notebook tab .button,
+.notebook tab .button:active,
+.notebook tab .button:active:hover,
+.notebook tab .button:hover {
+    border-image: none;
+    border-style: none;
+    background-image: none;
+    background-color: transparent;
+}
+
+.notebook tab .button GtkImage {
+    border-radius: 3px;
+    color: mix(@theme_fg_color, @theme_base_color, 0.6);
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
+    padding-top: 0px;
+
+    icon-shadow: 0 1px @button_text_shadow;
+}
+
+.notebook tab .button GtkImage:hover {
+    background-color: alpha(#7D0126, 0.34);
+    color: @theme_fg_color;
+    border-color: alpha(black, 0.1);
+    icon-shadow: 0 1px alpha(black, 0.5);
+}
+
+.notebook tab .button GtkImage:active,
+.notebook tab .button GtkImage:active:hover {
+    background-color: #7D0126;
+    box-shadow: inset 0 1px alpha(black, 0.05);
+    color:  @theme_base_color;
+    icon-shadow: 0 1px @button_active_text_shadow;
+
+    border-color: alpha(black, 0.27)
+                  alpha(black, 0.13)
+                  alpha(black, 0.13)
+                  alpha(black, 0.13);
+}*/
+/*
+.notebook tab .button GtkImage:backdrop {
+    color: mix(@theme_unfocused_fg_color, @theme_unfocused_base_color, 0.7);
+    icon-shadow: none;
+}*/
+/*
+.notebook tab .button GtkImage:backdrop:hover {
+    color: @theme_unfocused_fg_color;
+}*/
+
+.notebook tab {
+    box-shadow: none;
+    background-image: none;
+    background-color: transparent;
+    background-clip: padding-box;
+    border-width: 3px 15px 2px 15px;
+    border-style: solid;
+    -unico-focus-border-color: transparent;
+    -unico-focus-fill-color: transparent;
+}
+/*
+.notebook tab.top {
+border-image: linear-gradient(to bottom,
+                                  transparent,
+                                  transparent 25%,
+                                  shade(@theme_base_color, 0.65)
+                                  ) 0 1 0 0;
+    border-width: 0 1px 0px 0px;
+	}*/
+/*
+.notebook tab.bottom {
+border-image: linear-gradient(to bottom,
+								  shade(@theme_base_color, 0.65),
+                                  transparent 25%,
+                                  transparent
+                                  ) 0 1 0 0;
+    border-width: 0 1px 0px 0px;
+	}*/
+/*
+.notebook tab.right {
+border-image: linear-gradient(to right,
+								  shade(@theme_base_color, 0.65),
+                                  transparent 25%,
+                                  transparent
+                                  ) 0 0 1 0;
+    border-width: 0px 0px 1px 0px;
+	}*/
+/*
+.notebook tab.left {
+border-image: linear-gradient(to left,
+								  shade(@theme_base_color, 0.65),
+                                  transparent 25%,
+                                  transparent
+                                  ) 0 0 1 0;
+    border-width: 0 0px 1px 0px;
+	}*/
+
+.notebook tab.top:active,
+.notebook tab:active {
+    background-color: transparent;
+    background-image: none;
+    color: @theme_fg_color;
+    border-width: 3px 15px 2px 15px;
+}
+/*
+.notebook tab.top,
+.notebook tab {
+	background-image: linear-gradient(to bottom,
+										alpha(#000000,0.06),
+										transparent
+										),
+					  linear-gradient(to bottom,
+										#121212,
+										#121212
+										);
+	background-size: auto, auto;
+}*/
+
+.notebook tab.top:active,
+.notebook tab:active {
+	background-image: linear-gradient(to bottom,
+										alpha(#9d9d9d,0.06),
+										transparent
+										),
+					  linear-gradient(to bottom,
+										#0b0b0b,
+										#0b0b0b
+										);
+	background-size: auto, auto;
+}
+
+.notebook tab.bottom:active {
+	background-image: linear-gradient(to bottom,
+										transparent,
+										alpha(#9d9d9d,0.06)
+										),
+					  linear-gradient(to bottom,
+										#0b0b0b,
+										#0b0b0b
+										);
+	background-size: auto, auto;
+}
+
+.notebook tab.right:active {
+	background-image: linear-gradient(to right,
+										transparent,
+										alpha(#9d9d9d,0.06)
+										),
+					  linear-gradient(to right,
+										#0b0b0b,
+										#0b0b0b
+										);
+	background-size: auto, auto;
+}
+
+.notebook tab.right {
+	background-image: linear-gradient(to right,
+										transparent,
+										rgba(0,0,0,0.12)
+										),
+					  linear-gradient(to right,
+										#323232,
+										#323232
+										);
+	background-size: auto, auto;
+}
+
+.notebook tab.left:active {
+	background-image: linear-gradient(to left,
+										transparent,
+										alpha(#9d9d9d,0.06)
+										),
+					  linear-gradient(to left,
+										#0b0b0b,
+										#0b0b0b
+										);
+	background-size: auto, auto;
+}
+
+.notebook tab.left {
+	background-image: linear-gradient(to left,
+										transparent,
+										rgba(0,0,0,0.12)
+										),
+					  linear-gradient(to left,
+										#323232,
+										#323232
+										);
+	background-size: auto, auto;
+}
+
+.notebook tab GtkLabel {
+    padding: 1px 4px 1px;
+}
+
+.notebook tab {
+    color: shade (@theme_bg_color, 0.48);
+}
+
+.notebook tab.top {
+    padding: 1px 12px 1px 14px;
+    background-color: transparent;
+    background-image: none;
+    border-width: 5px 3px 3px 3px
+}
+
+.notebook tab.top:active {
+    padding: 4px 12px 1px 14px;
+}
+
+.notebook tab.right {
+    padding: 13px 1px 14px 3px;
+    border-width: 15px 3px 15px 12px;
+}
+
+.notebook tab.right:active {
+    padding: 13px 1px 14px 3px;
+    border-width: 15px 3px 15px 12px;
+}
+
+.notebook tab.bottom {
+    padding: 3px 12px 1px 14px;
+    background-color: transparent;
+    background-image: none;
+    border-width: 3px 3px 5px 3px
+}
+
+.notebook tab.bottom:active {
+    border-width: 2px 15px 3px 15px;
+    padding: 1px 13px 3px 14px;
+}
+
+.notebook tab.left {
+    padding: 13px 3px 14px 1px;
+    border-width: 15px 2px 15px 3px;
+}
+
+.notebook tab.left:active {
+	border-width: 15px 2px 15px 3px;
+    padding: 13px 3px 14px 1px;
+}
+
+
+
+.notebook GtkDrawingArea {
+    background-color: @notebook_bg_color;
+}
+
+.notebook tab {
+    border-image: none;
+}
+
+.notebook tab.top {
+    border-image: url("assets/tab-top.svg") 5 3 3 3 / 5px 3px 3px 3px stretch;
+}
+
+.notebook tab.top:active {
+    border-image: url("assets/tab-active-gtk-6.png") 3 15 2 15 / 3px 15px 2px 15px stretch;
+}
+
+.notebook tab.top:active:focus {
+    border-image: url("assets/tab-active-gtk-6.png") 3 15 2 15 / 3px 15px 2px 15px stretch;
+}
+
+
+
+.notebook tab.right {
+    border-image: url("assets/tab-gtk-7-right.png") 15 3 15 2 / 15px 3px 15px 12px stretch;
+}
+
+.notebook tab.right:active {
+    border-image: url("assets/tab-active-gtk-6-right.png") 15 3 15 2 / 15px 3px 15px 12px stretch;
+}
+
+.notebook tab.right:active:focus {
+    border-image: url("assets/tab-active-gtk-6-right.png") 15 3 15 2 / 15px 3px 15px 12px stretch;
+}
+
+
+.notebook tab.bottom {
+    border-image: url("assets/tab-bottom.svg") 3 3 5 3 / 3px 3px 5px 3px stretch;
+}
+
+.notebook tab.bottom:active {
+    border-image: url("assets/tab-active-gtk-6-bottom.png") 2 15 3 15 / 2px 15px 3px 15px stretch;
+}
+
+.notebook tab.bottom:active:focus {
+    border-image: url("assets/tab-active-gtk-6-bottom.png") 2 15 3 15 / 2px 15px 3px 15px stretch;
+}
+
+
+
+.notebook tab.left {
+    border-image: url("assets/tab-gtk-7-left.png") 15 2 15 3 / 15px 2px 15px 3px stretch;
+}
+
+.notebook tab.left:active {
+    border-image: url("assets/tab-active-gtk-6-left.png") 15 2 15 3 / 15px 2px 15px 3px stretch;
+}
+
+.notebook tab.left:active:focus {
+    border-image: url("assets/tab-active-gtk-6-left.png") 15 2 15 3 / 15px 2px 15px 3px stretch;
+}
+
+/* close button styling */
+.notebook tab .button,
+.notebook tab .button:active,
+.notebook tab .button:hover {
+    border-image: none;
+    background-image: none;
+    background-color: transparent;
+    border-radius: 3px;
+    color: mix(@theme_fg_color, @theme_base_color, 0.6);
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
+    padding: 1px;
+    icon-shadow: 0 1px @button_text_shadow;
+}
+
+
+.notebook tab .button:hover {
+    color: @theme_fg_color;
+    border-color: alpha(black, 0.1);
+}
+
+.notebook tab .button:active,
+.notebook tab .button:active:hover {
+    background-color: alpha(black, 0.08);
+    box-shadow: inset 0 1px alpha(black, 0.05);
+    color:  @button_active_text;
+    icon-shadow: 0 1px @button_active_text_shadow;
+
+    border-color: alpha(black, 0.27)
+                  alpha(black, 0.13)
+                  alpha(black, 0.13)
+                  alpha(black, 0.13);
+}
+
+.notebook tab .button:backdrop {
+    color: mix(@theme_unfocused_fg_color, @theme_unfocused_base_color, 0.7);
+    icon-shadow: none;
+}
+
+.notebook tab .button:backdrop:hover {
+    color: @theme_unfocused_fg_color;
+}
+
+/***************************************************/
+EphyNotebook.notebook {
+	padding: 0;
+}
+
+EphyNotebook.notebook tab.top,
+EphyNotebook.notebook tab {
+	background-image: linear-gradient(to bottom,
+										alpha(#000000,0.12),
+										transparent
+										),
+					  linear-gradient(to bottom,
+										#323232,
+										#323232
+										);
+	background-size: auto, auto;
+	border-width: 3px 15px 2px 15px;
+}
+
+EphyNotebook.notebook tab.top {
+    border-image: url("assets/tab-gtk-7.png") 3 15 2 15 / 3px 15px 2px 15px stretch;
+}
+

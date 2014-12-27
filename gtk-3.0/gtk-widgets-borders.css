@@ -1,0 +1,1234 @@
+/* Borders */
+
+.trough,
+.trough.vertical,
+.trough.highlight {
+    /*border-image: url("borders/trough/progress-trough-border.svg") 10 / 10px stretch;*/
+    border-image: none;
+    border-radius: 17px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #0e0e0e;
+    border-left-color: #141414;
+    border-right-color: #141414;
+    border-bottom-color: #262626;
+    }
+
+.trough.vertical {
+	border-left-color: #0e0e0e;
+    border-top-color: #141414;
+    border-bottom-color: #141414;
+    border-right-color: #212121;
+    }
+.entry,
+GtkComboBox.combobox-entry .entry,
+GtkComboBox.combobox-entry .button,
+/*.button:active,
+.button:insensitive,
+.button.default:insensitive,
+.spinbutton.vertical .button:active,
+.spinbutton.vertical .button:insensitive,
+.inline-toolbar.toolbar.vertical .button:active,
+.inline-toolbar.toolbar.vertical .button:insensitive,
+.inline-toolbar.toolbar.vertical .button.default:insensitive,
+.trough,
+.trough.highlight,
+GtkSwitch.trough,
+GtkSwitch.trough:active:insensitive,*/
+.titlebar .titlebutton:hover,
+.titlebar .titlebutton:active,
+GtkComboBox.combobox-entry .button:focus,
+.menubar .menuitem GtkScale.trough  {
+    border-image: url("borders/entry/entry.svg") 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 2px;
+/*
+    border-image: -gtk-scaled(url("borders/generic-border.png"),url("borders/generic-border@2.png")) 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 3px;*/
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+/*
+.trough row {
+    border-image: -gtk-scaled (url("borders/nohl-generic-border.png"),url("borders/nohl-generic-border@2.png")) 3 / 3px stretch;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}*/
+
+/* focused element borders */
+/*
+.entry:focus,
+GtkComboBox.combobox-entry .entry:focus,
+.button.default:active,
+.inline-toolbar.toolbar.vertical .button.default:active,
+GtkSwitch.trough:active {
+    border-image: -gtk-scaled(url("borders/generic-border-focused.png"),url("borders/generic-border-focused@2.png")) 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}*/
+
+/* generic button borders */
+/*
+.button,
+.spinbutton.vertical .button,
+.inline-toolbar.toolbar.vertical .button {
+    border-image: -gtk-scaled(url("borders/button-border.png"),url("borders/button-border@2.png")) 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}*/
+
+/* focused button borders */
+/*
+.button.default {
+    border-image: -gtk-scaled(url("borders/button-border-default.png"),url("borders/button-border-default@2.png")) 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}*/
+
+/* tooltip elements borders */
+/*
+.tooltip .entry,
+.tooltip .button {
+    border-image: -gtk-scaled (url("borders/tooltip-generic-border.svg"),url("borders/tooltip-generic-border@2.png")) 3 / 3px stretch;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}*/
+
+/* tooltip focused elements borders */
+/*
+.tooltip .entry:focus {
+    border-image: -gtk-scaled (url("borders/tooltip-generic-border-focused.svg"),url("borders/tooltip-generic-border-focused@2.png")) 3 / 3px stretch;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}*/
+
+/* primary toolbar - generic element borders */
+/*
+.primary-toolbar .entry,
+.primary-toolbar GtkComboBox.combobox-entry .entry,
+.primary-toolbar GtkComboBox.combobox-entry .button,
+.primary-toolbar .button:active,
+.primary-toolbar .button.raised:active,
+.primary-toolbar .raised .button:active,
+.primary-toolbar .button.raised:insensitive,
+.primary-toolbar .raised .button:insensitive,
+.primary-toolbar .button.raised.default:insensitive,
+.primary-toolbar .raised .button.default:insensitive,
+.inline-toolbar.toolbar .button.default:insensitive,
+.inline-toolbar.toolbar .button:active,
+.inline-toolbar.toolbar .button:insensitive,
+.primary-toolbar GtkSwitch.trough,
+.primary-toolbar GtkSwitch.trough:insensitive,
+.primary-toolbar GtkSwitch.trough:active:insensitive,
+.primary-toolbar GtkComboBox .button:active,
+.primary-toolbar GtkComboBox .button:insensitive {
+    border-image: -gtk-scaled(url("borders/primary-toolbar-generic-border.png"),url("borders/primary-toolbar-generic-border@2.png")) 4 / 4px stretch;
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+}*/
+.primary-toolbar .entry,
+.primary-toolbar GtkComboBox.combobox-entry .entry,
+.primary-toolbar GtkComboBox.combobox-entry .button,
+.primary-toolbar GtkComboBox.combobox-entry .button:focus,
+.notebook .primary-toolbar .entry,
+.notebook .primary-toolbar GtkComboBox.combobox-entry .entry,
+.notebook .primary-toolbar GtkComboBox.combobox-entry .button,
+.notebook .primary-toolbar GtkComboBox.combobox-entry .button:focus  {
+    border-image: url("borders/entry/toolbar-entry.svg") 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 2px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+.notebook .entry,
+.notebook GtkComboBox.combobox-entry .button,
+.notebook GtkComboBox.combobox-entry .entry,
+.notebook GtkComboBox.combobox-entry .button:focus {
+    border-image: url("borders/entry/entry-notebook.svg") 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.notebook .entry:focus,
+.notebook GtkComboBox.combobox-entry .entry:focus,
+.notebook GtkComboBox.combobox-entry .button:hover,
+.notebook GtkComboBox.combobox-entry .button:hover:focus,
+.notebook GtkComboBox.combobox-entry .button:active,
+.notebook GtkComboBox.combobox-entry .button:active:hover {
+    border-image: url("borders/entry/entry-notebook-focus.svg") 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.entry:focus,
+.primary-toolbar .entry:focus,
+GtkComboBox.combobox-entry .entry:focus,
+GtkComboBox.combobox-entry .button:hover,
+GtkComboBox.combobox-entry .button:hover:focus,
+GtkComboBox.combobox-entry .button:active,
+GtkComboBox.combobox-entry .button:active:hover,
+.primary-toolbar GtkComboBox.combobox-entry .entry:focus,
+.primary-toolbar GtkComboBox.combobox-entry .button:hover,
+.primary-toolbar GtkComboBox.combobox-entry .button:hover:focus,
+.primary-toolbar GtkComboBox.combobox-entry .button:active,
+.primary-toolbar GtkComboBox.combobox-entry .button:active:hover {
+    border-image: url("borders/entry/entry-focus.svg") 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+/*.primary-toolbar .entry:focus,
+.primary-toolbar GtkComboBox.combobox-entry .entry:focus,
+.primary-toolbar .button.raised.default:active,
+.primary-toolbar .raised .button.default:active,
+.inline-toolbar.toolbar .button.default:active {
+    border-image: -gtk-scaled(url("borders/primary-toolbar-generic-border-focused.png"),url("borders/primary-toolbar-generic-border-focused@2.png")) 4 / 4px stretch;
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+}*/
+
+/* primary toolbar - generic button borders */
+/*
+.primary-toolbar .button.raised,
+.primary-toolbar .raised .button,
+.inline-toolbar.toolbar .button,
+.primary-toolbar GtkComboBox .button {
+    border-image: -gtk-scaled(url("borders/primary-toolbar-button-border.png"),url("borders/primary-toolbar-button-border@2.png")) 4 / 4px stretch;
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+}*/
+
+/* primary toolbar - focused button borders */
+/*
+.primary-toolbar .button.raised.default,
+.primary-toolbar .raised .button.default,
+.inline-toolbar.toolbar .button.default {
+    border-image: -gtk-scaled(url("borders/primary-toolbar-button-border-default.png"),url("borders/primary-toolbar-button-border-default@2.png")) 4 / 4px stretch;
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+}*/
+
+/* column-headers borders */
+/*
+column-header.button,
+column-header .button,
+column-header.button:active,
+column-header .button:active,
+column-header.button:active:hover,
+column-header .button:active:hover,
+column-header.button:backdrop,
+column-header .button:backdrop,
+column-header.button:insensitive,
+column-header .button:insensitive,
+column-header.button:last-child:backdrop,
+column-header:last-child .button:backdrop {
+    border-width: 0 1px 1px 0;
+    border-radius: 0;
+    border-style: solid;
+    border-color: transparent;
+}
+
+column-header.button,
+column-header .button,
+column-header.button:active,
+column-header .button:active,
+column-header.button:active:hover,
+column-header .button:active:hover,
+column-header .button.dnd {
+    border-image: linear-gradient(to top,
+                                  mix(@borders, @theme_base_color, 0.5),
+                                  @theme_base_color
+                                  ) 0 1 1 0;
+}
+
+column-header.button:backdrop,
+column-header .button:backdrop,
+column-header.button:last-child:backdrop,
+column-header:last-child .button:backdrop {
+    border-image: none;
+}
+
+column-header.button:insensitive,
+column-header .button:insensitive {
+    border-image: linear-gradient(to top,
+                                  mix(@insensitive_borders, @insensitive_bg_color, 0.5),
+                                  @insensitive_bg_color
+                                  ) 0 1 1 0;
+}
+
+column-header.button:last-child,
+column-header:last-child .button,
+column-header.button:last-child:active,
+column-header:last-child .button:active,
+column-header.button:last-child:active:hover,
+column-header:last-child .button:active:hover,
+column-header.button:last-child:backdrop,
+column-header:last-child .button:backdrop {
+    border-right-width: 0;
+}*/
+
+
+/* unfocused window: generic element borders */
+/*
+.button:backdrop,
+.spinbutton.vertical .button:backdrop,
+GtkComboBox.combobox-entry .entry:backdrop,
+GtkComboBox.combobox-entry .button:backdrop,
+.entry:backdrop,
+GtkSwitch.trough:backdrop,
+.trough:backdrop,
+.inline-toolbar.toolbar.vertical .button:backdrop,
+.inline-toolbar.toolbar.vertical .button:backdrop:insensitive,
+.inline-toolbar.toolbar.vertical .button:backdrop:active,
+.suggested-action.button:backdrop,
+.toolbar .suggested-action.button:backdrop,
+.destructive-action.button:backdrop {
+    border-image: -gtk-scaled (url("borders/generic-border-backdrop.png"),url("borders/generic-border-backdrop@2.png")) 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.trough row:backdrop {
+    border-image: -gtk-scaled (url("borders/nohl-generic-border-backdrop.png"),url("borders/nohl-generic-border-backdrop@2.png")) 3 / 3px stretch;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}*/
+
+/* unfocused window: primary toolbar generic element borders */
+/*
+.primary-toolbar .button:active:backdrop,
+.primary-toolbar .button.raised:backdrop,
+.primary-toolbar .raised .button:backdrop,
+.primary-toolbar GtkComboBox.combobox-entry .entry:backdrop,
+.primary-toolbar GtkComboBox.combobox-entry .button:backdrop,
+.primary-toolbar GtkComboBox .button:backdrop,
+.primary-toolbar .entry:backdrop,
+.primary-toolbar GtkSwitch.trough:backdrop,
+.inline-toolbar.toolbar .button:backdrop,
+.inline-toolbar.toolbar .button:backdrop:insensitive,
+.inline-toolbar.toolbar .button:backdrop:active {
+    border-image: -gtk-scaled (url("borders/primary-toolbar-generic-border-backdrop.png"),url("borders/primary-toolbar-generic-border-backdrop@2.png")) 4 / 4px stretch;
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+}*/
+
+/* pushed colored buttons borders */
+.selection-mode.toolbar .suggested-action.button,
+.selection-mode.toolbar GtkToolButton.suggested-action .button {
+    border-image: -gtk-scaled (url("borders/generic-border-transparent.png"),url("borders/generic-border-transparent@2.png")) 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 4px;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: transparent;
+
+}
+/* scale & switch borders */
+GtkScale.slider,
+GtkScale.slider.vertical {
+    border-image: none;
+    border-radius: 0px;
+    border-width: 0px;
+    border-style: none;
+    border-color: transparent;
+    }
+
+/*
+GtkScale.slider:backdrop,
+GtkScale.slider:hover:backdrop,
+GtkScale.slider:active:backdrop,
+GtkScale.slider.vertical:backdrop,
+GtkScale.slider:hover:active:backdrop,
+GtkScale.slider.horizontal:insensitive:backdrop,
+GtkScale.slider.vertical:insensitive:backdrop {
+    border-image: url("borders/scale/scale-slider-backdrop.svg") 3 / 3px stretch;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}*/
+/*
+GtkSwitch.slider,
+GtkSwitch.slider:hover {
+	border-image: url("borders/scale/scale-slider.svg") 3 / 3px stretch;
+    border-radius: 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    }*/
+/*
+GtkSwitch.slider:active,
+GtkSwitch.slider:active:hover {
+    border-image: url("borders/scale/scale-slider-active.svg") 3 / 3px stretch;
+		}*/
+/*
+GtkSwitch.slider:backdrop,
+GtkSwitch.slider:hover:backdrop,
+GtkSwitch.slider:active:backdrop,
+GtkSwitch.slider:active:hover:backdrop {
+    color: alpha(black, 0.0);
+    border-image: url("borders/scale/scale-slider-backdrop.svg") 3 / 3px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: transparent;
+}*/
+
+
+/* suggested action buttons borders */
+/*
+.suggested-action.button,
+.suggested-action.button:active {
+    border-image: -gtk-scaled(url("borders/button-border-suggested.png"),url("borders/button-border-suggested@2.png")) 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}*/
+
+/* destructive action buttons borders */
+.destructive-action.button,
+.destructive-action.button:active {
+    border-image: -gtk-scaled(url("borders/button-border-destructive.png"),url("borders/button-border-destructive@2.png")) 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+
+
+/* button borders */
+
+.primary-toolbar .button.raised:active,
+.primary-toolbar .raised .button:active,
+.primary-toolbar GtkComboBox .button:active,
+
+.button:active,
+.button.default:active,
+.button.default:active:hover,
+.button:hover:active,
+.button.default:active:insensitive,
+.button:active:insensitive,
+.toolbar .button:active:insensitive,
+.toolbar GtkComboBox .button:active:insensitive {
+    border-image: url("borders/button/button-active.svg") 5 / 5px stretch;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+	box-shadow: inset 0 1px alpha(black, 0.12),
+				1px 0 alpha(black, 0.06) inset,
+				-1px 0 alpha(black, 0.06) inset;
+}
+
+.linked .button:active,
+.linked .button:active:hover,
+.linked .button:active:insensitive,
+.linked .button.default:active:insensitive,
+.toolbar .button:active,
+.toolbar .button:hover:active,
+.toolbar .button:active:insensitive,
+.toolbar .button.default:active:insensitive,
+.spinbutton.vertical .button:active,
+.spinbutton.vertical .button:active:focus,
+.spinbutton.vertical .button:active:insensitive {
+    /*border-image: url("borders/button/toolbar-button-active-2.svg") 4 / 4px stretch;*/
+    border-image: url("borders/button/button.svg") 5 / 5px stretch;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+/*
+.entry:backdrop,
+.trough:backdrop,
+.trough.vertical:backdrop,
+.trough.highlight:backdrop,
+GtkSwitch.trough:backdrop,
+GtkSwitch.trough:active:insensitive:backdrop,
+GtkSwitch.trough:active:backdrop,
+.button:active:backdrop,
+.button:active:hover:backdrop,
+.button.default:active:backdrop,
+.button.default:active:hover:backdrop,
+GtkComboBox.combobox-entry .entry:backdrop,
+GtkComboBox.combobox-entry .button:backdrop,
+GtkComboBox.combobox-entry .button:hover:backdrop,
+GtkComboBox.combobox-entry .button:hover:focus:backdrop,
+GtkComboBox.combobox-entry .button:focus:backdrop,
+.primary-toolbar GtkComboBox.combobox-entry .entry:focus:backdrop,
+.primary-toolbar GtkComboBox.combobox-entry .button:focus:backdrop,
+.primary-toolbar GtkComboBox.combobox-entry .entry:backdrop,
+.primary-toolbar GtkComboBox.combobox-entry .button:backdrop {
+    border-image: url("borders/button/button-active-backdrop.svg") 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+    box-shadow: none;
+}*/
+
+.button,
+.spinbutton.vertical .button,
+.spinbutton.vertical .button:focus,
+.inline-toolbar.toolbar.vertical .button,
+GtkSwitch.trough,
+GtkSwitch.trough:active {
+    border-image: url("borders/button/button.svg") 5 / 5px stretch;
+    border-radius: 5px;
+    border-width: 1px ;
+    border-style: solid;
+    border-color: transparent;
+}
+/*
+.button:backdrop,
+.button:hover:backdrop,
+.button:insensitive:backdrop,
+.button.default:hover:backdrop,
+.selection-mode.toolbar .suggested-action.button:backdrop,
+.selection-mode.toolbar GtkToolButton.suggested-action .button:backdrop,
+.inline-toolbar.toolbar.vertical .button:backdrop,
+.inline-toolbar.toolbar.vertical .button:backdrop:insensitive,
+.inline-toolbar.toolbar.vertical .button:backdrop:active {
+    border-image: url("borders/button/button-backdrop.svg") 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}*/
+
+.button:insensitive,
+.button.default:insensitive,
+.toolbar GtkComboBox .button:insensitive,
+.toolbar .button.raised:insensitive,
+.toolbar .raised .button:insensitive,
+/*.button.default:backdrop,*/
+.spinbutton.vertical .button:insensitive,
+.primary-toolbar .button.raised:insensitive,
+.primary-toolbar .raised .button:insensitive,
+.primary-toolbar .button.raised.default:insensitive,
+.primary-toolbar .raised .button.default:insensitive,
+.primary-toolbar GtkComboBox .button:insensitive,
+GtkSwitch.trough:insensitive {
+    border-image: url("borders/button/button-insensitive.svg") 5 / 5px stretch;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.entry:insensitive,
+.primary-toolbar .entry:insensitive,
+GtkComboBox.combobox-entry .entry:insensitive,
+GtkComboBox.combobox-entry .button:insensitive,
+.primary-toolbar GtkComboBox.combobox-entry .entry:insensitive,
+.primary-toolbar GtkComboBox.combobox-entry .button:insensitive {
+    border-image: url("borders/entry/entry-insensitive.svg") 4 / 4px stretch;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.notebook .entry:insensitive,
+/*.notebook .button:insensitive,
+.notebook .button.default:insensitive,
+.notebook .button.default:active:insensitive,
+.notebook .button:active:insensitive,
+.notebook .primary-toolbar .entry:insensitive,
+.notebook GtkComboBox.combobox-entry .entry:insensitive,
+.notebook GtkComboBox.combobox-entry .button:insensitive,
+.notebook .primary-toolbar GtkComboBox.combobox-entry .entry:insensitive,
+.notebook .primary-toolbar GtkComboBox.combobox-entry .button:insensitive,
+.notebook .primary-toolbar .button.raised:insensitive,
+.notebook .primary-toolbar .raised .button:insensitive,
+.notebook .primary-toolbar .button.raised.default:insensitive,
+.notebook .primary-toolbar .raised .button.default:insensitive,
+.notebook .primary-toolbar GtkComboBox .button:insensitive,*/
+
+/*GtkViewport .button:insensitive,
+GtkViewport .button.default:insensitive,
+GtkViewport .button.default:active:insensitive,
+GtkViewport .button:active:insensitive,
+GtkViewport .primary-toolbar .entry:insensitive,
+GtkViewport GtkComboBox.combobox-entry .entry:insensitive,
+GtkViewport GtkComboBox.combobox-entry .button:insensitive,
+GtkViewport .primary-toolbar GtkComboBox.combobox-entry .entry:insensitive,
+GtkViewport .primary-toolbar GtkComboBox.combobox-entry .button:insensitive,
+GtkViewport .primary-toolbar .button.raised:insensitive,
+GtkViewport .primary-toolbar .raised .button:insensitive,
+GtkViewport .primary-toolbar .button.raised.default:insensitive,
+GtkViewport .primary-toolbar .raised .button.default:insensitive,
+GtkViewport .primary-toolbar GtkComboBox .button:insensitive, */
+GtkViewport .entry:insensitive {
+     border-image: url("borders/entry/entry-notebook.svg") 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+}
+/*
+.notebook .entry:insensitive:backdrop,
+.notebook .button:insensitive:backdrop,
+.notebook .button.default:insensitive:backdrop,
+.notebook .button.default:active:insensitive:backdrop,
+.notebook .button:active:insensitive:backdrop,
+.notebook .primary-toolbar .entry:insensitive:backdrop,
+.notebook GtkComboBox.combobox-entry .entry:insensitive:backdrop,
+.notebook GtkComboBox.combobox-entry .button:insensitive:backdrop,
+.notebook .primary-toolbar GtkComboBox.combobox-entry .entry:insensitive:backdrop,
+.notebook .primary-toolbar GtkComboBox.combobox-entry .button:insensitive:backdrop,
+.notebook .primary-toolbar .button.raised:insensitive:backdrop,
+.notebook .primary-toolbar .raised .button:insensitive:backdrop,
+.notebook .primary-toolbar .button.raised.default:insensitive:backdrop,
+.notebook .primary-toolbar .raised .button.default:insensitive:backdrop,
+.notebook .primary-toolbar GtkComboBox .button:insensitive:backdrop,
+GtkViewport .entry:insensitive:backdrop,
+GtkViewport .button:insensitive:backdrop,
+GtkViewport .button.default:insensitive:backdrop,
+GtkViewport .button.default:active:insensitive:backdrop,
+GtkViewport .button:active:insensitive:backdrop,
+GtkViewport .primary-toolbar .entry:insensitive:backdrop,
+GtkViewport GtkComboBox.combobox-entry .entry:insensitive:backdrop,
+GtkViewport GtkComboBox.combobox-entry .button:insensitive:backdrop,
+GtkViewport .primary-toolbar GtkComboBox.combobox-entry .entry:insensitive:backdrop,
+GtkViewport .primary-toolbar GtkComboBox.combobox-entry .button:insensitive:backdrop,
+GtkViewport .primary-toolbar .button.raised:insensitive:backdrop,
+GtkViewport .primary-toolbar .raised .button:insensitive:backdrop,
+GtkViewport .primary-toolbar .button.raised.default:insensitive:backdrop,
+GtkViewport .primary-toolbar .raised .button.default:insensitive:backdrop,
+GtkViewport .primary-toolbar GtkComboBox .button:insensitive:backdrop {
+    border-image: url("borders/button/button-backdrop.svg") 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}*/
+.button:hover,
+.button.default:hover,
+.spinbutton.vertical .button:hover,
+.spinbutton.vertical .button:hover:focus {
+    border-image: url("borders/button/button-hover.svg") 4 / 4px stretch;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.button.default {
+    border-image: url("borders/button/button-default.svg") 5 / 5px stretch;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+/* tooltip elements borders */
+.tooltip .entry,
+.tooltip .button {
+    border-image: url("borders/tooltip/tooltip-borders.svg") 3 / 3px stretch;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+/* tooltip focused elements borders */
+.tooltip .entry:focus {
+    border-image: url("borders/tooltip/tooltip-borders-focus.svg") 3 / 3px stretch;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+/* inline-toolbar buttons */
+.inline-toolbar.toolbar .button,
+.inline-toolbar.toolbar .button:hover,
+.inline-toolbar.toolbar .button.default,
+.inline-toolbar.toolbar .button.default:hover,
+.inline-toolbar.toolbar .button:insensitive,
+.inline-toolbar.toolbar GtkToolButton .button:insensitive,
+.inline-toolbar.toolbar.vertical .button:active,
+.inline-toolbar.toolbar.vertical .button:insensitive,
+.inline-toolbar.toolbar.vertical .button.default:insensitive {
+    border-image: url("borders/inline/inline-button.svg") 4 / 4px stretch;
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.inline-toolbar.toolbar .button:active,
+.inline-toolbar.toolbar .button:active:hover,
+.inline-toolbar.toolbar .button.default:active,
+.inline-toolbar.toolbar .button.default:active:hover,
+.inline-toolbar.toolbar GtkToolButton .button:active,
+.inline-toolbar.toolbar GtkToolButton .button:active:hover,
+.inline-toolbar.toolbar.vertical .button.default:active {
+    border-image: url("borders/inline/inline-button.svg") 4 / 4px stretch;
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+/*
+.inline-toolbar.toolbar .button:backdrop,
+.inline-toolbar.toolbar .button:hover:backdrop,
+.inline-toolbar.toolbar .button:focus:active:backdrop,
+.inline-toolbar.toolbar .button.default:backdrop,
+.inline-toolbar.toolbar .button.default:hover:backdrop,
+.inline-toolbar.toolbar .button:backdrop:insensitive,
+.inline-toolbar.toolbar.vertical .button:backdrop,
+.inline-toolbar.toolbar.vertical .button:hover:backdrop,
+.inline-toolbar.toolbar.vertical .button:active:backdrop,
+.inline-toolbar.toolbar.vertical .button:insensitive:backdrop,
+.inline-toolbar.toolbar.vertical .button.default:insensitive:backdrop {
+    border-image: url("borders/inline/inline-button-backdrop.svg") 4 / 4px stretch;
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+}*/
+
+/* primary toolbar - generic button borders */
+
+.primary-toolbar .button:hover {
+	box-shadow: none;
+
+    border-image: url("borders/primary/primary-hover-3.svg") 6 / 6px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+/*
+.primary-toolbar .button:hover:backdrop {
+    border-image: none;
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+}*/
+
+.primary-toolbar .button:active:hover,
+.primary-toolbar .button:active:focus,
+.primary-toolbar .button:active {
+    border-image: url("borders/primary/primary-active.svg") 6 / 6px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+    /*box-shadow: inset 0 1px alpha(black, 0.08),
+				inset 0 2px alpha(black, 0.03),
+				inset 0 4px alpha(black, 0.03),
+				1px 0 alpha(black, 0.03) inset,
+				-1px 0 alpha(black, 0.03) inset,
+				-2px 0 alpha(black, 0.03) inset,
+				-3px 0 alpha(black, 0.03) inset,
+				2px 0 alpha(black, 0.03) inset,
+				3px 0 alpha(black, 0.03) inset;*/
+	box-shadow: 1px 0 alpha(black, 0.06) inset;
+}
+
+.primary-toolbar .button:active:hover {
+    border-image: url("borders/primary/primary-active-hover.svg") 6 / 6px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+	box-shadow: 1px 0 alpha(black, 0.06) inset;
+}
+
+/*
+.primary-toolbar .button:active:hover{
+    border-image: url("borders/primary/primary-active.svg") 4 / 4px stretch;
+    border-radius: 2px 2px 0 0 ;
+    border-width: 1px ;
+    border-style: solid;
+    border-color: transparent;
+
+    box-shadow: 1px 1px alpha(black, 0.08) inset,
+				-1px 0 alpha(black, 0.08) inset;
+}*/
+/*
+.primary-toolbar .button:active:backdrop,
+.primary-toolbar .button:active:hover:backdrop,
+.primary-toolbar .button:active:focus:backdrop {
+    border-image: url("borders/primary/primary-active-backdrop.svg") 4 / 4px stretch;
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+}*/
+
+
+/*
+.button:backdrop,
+.button:hover:backdrop,
+.button:insensitive:backdrop,
+.button.default:hover:backdrop,
+.selection-mode.toolbar .suggested-action.button:backdrop,
+.selection-mode.toolbar GtkToolButton.suggested-action .button:backdrop,
+.inline-toolbar.toolbar.vertical .button:backdrop,
+.inline-toolbar.toolbar.vertical .button:backdrop:insensitive,
+.inline-toolbar.toolbar.vertical .button:backdrop:active {
+    border-image: url("borders/button/button-backdrop.svg") 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}*/
+
+
+/* raised buttons */
+.primary-toolbar .button.raised,
+.primary-toolbar .raised .button,
+.primary-toolbar GtkComboBox .button {
+    border-image: url("borders/raised/raised-button.svg") 5 / 5px stretch;
+    border-radius: 5px;
+    border-width: 1px ;
+    border-style: solid;
+    border-color: transparent;
+    transition: 275ms ease-in-out;
+}
+
+.primary-toolbar .button.raised.default,
+.primary-toolbar .raised .button.default,
+.primary-toolbar GtkComboBox .button.default {
+    border-image: url("borders/raised/raised-button.svg") 5 / 5px stretch;
+    border-radius: 5px;
+    border-width: 1px ;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.primary-toolbar .button.raised:active,
+.primary-toolbar .raised .button:active,
+.primary-toolbar .button.raised:active:hover,
+.primary-toolbar .raised .button:active:hover,
+.primary-toolbar .button.raised.default:active,
+.primary-toolbar .raised .button.default:active,
+.primary-toolbar .button.raised.default:active:hover,
+.primary-toolbar .raised .button.default:active:hover,
+.primary-toolbar GtkComboBox .button:active {
+    border-image: url("borders/raised/raised-button.svg") 5 / 5px stretch;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    transition: 275ms ease-in-out;
+}
+
+.primary-toolbar .button.raised:hover,
+.primary-toolbar .raised .button:hover,
+.primary-toolbar .raised .button.default:hover,
+.primary-toolbar .button.raised.default:hover,
+.primary-toolbar GtkComboBox .button:hover {
+    border-image: url("borders/raised/raised-button-hover.svg") 4 / 4px stretch;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+ /*Nesassary for some reason it doesnt draw backdrops of these buttons without this*/
+.primary-toolbar .button.raised:backdrop,
+.primary-toolbar .raised .button:backdrop,
+/*.primary-toolbar .button.raised.default:hover:backdrop,
+.primary-toolbar .raised .button:hover:backdrop,
+.primary-toolbar .raised .button.default:hover:backdrop,*/
+.primary-toolbar GtkComboBox .button:backdrop
+.primary-toolbar GtkComboBox *:backdrop  /*
+.primary-toolbar GtkComboBox *:backdrop:insensitive*/ {
+    border-image: url("borders/raised/raised-button.svg") 5 / 5px stretch;
+    border-radius: 5px;
+    border-width: 1px ;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.primary-toolbar .button.raised.default:hover:backdrop,
+.primary-toolbar .raised .button:hover:backdrop,
+.primary-toolbar .raised .button.default:hover:backdrop,
+.primary-toolbar GtkComboBox .button:hover:backdrop {
+    border-image: url("borders/raised/raised-button-hover.svg") 4 / 4px stretch;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.primary-toolbar .button.raised:active:backdrop,
+.primary-toolbar .raised .button:active:backdrop,
+.primary-toolbar .button.raised:active:hover:backdrop,
+.primary-toolbar .raised .button:active:hover:backdrop,
+.primary-toolbar .button.raised.default:active:backdrop,
+.primary-toolbar .raised .button.default:active:backdrop,
+.primary-toolbar .button.raised.default:active:hover:backdrop,
+.primary-toolbar .raised .button.default:active:hover:backdrop,
+.primary-toolbar GtkComboBox .button:active:backdrop {
+    border-image: url("borders/raised/raised-button.svg") 5 / 5px stretch;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    transition: 275ms ease-in-out;
+}
+/***********************/
+
+/* column-headers borders */
+column-header.button,
+column-header .button,
+column-header.button:hover,
+column-header .button:hover,
+column-header.button:focus,
+column-header .button:focus,
+column-header.button:focus:hover,
+column-header .button:focus:hover,
+column-header.button:active,
+column-header .button:active,
+column-header.button:active:hover,
+column-header .button:active:hover,
+column-header.button:active:hover:focus,
+column-header .button:active:hover:focus,
+column-header.button:active:focus,
+column-header .button:active:focus {
+   border-image: linear-gradient(to top,
+                                  alpha(black,0.36),
+                                  shade(@theme_bg_color, 0.8) 8%,
+                                  shade(@theme_bg_color, 0.4)
+                                  ) 0 1 1 0;
+    border-width: 0 1px 1px 0;
+    border-radius: 0;
+    border-style: solid;
+    border-color: @theme_bg_color;
+    box-shadow: inset 1px 0 alpha(white, 0.02);
+}
+
+.notebook column-header.button,
+.notebook column-header .button,
+.notebook column-header.button:hover,
+.notebook column-header .button:hover,
+.notebook column-header.button:focus,
+.notebook column-header .button:focus,
+.notebook column-header.button:focus:hover,
+.notebook column-header .button:focus:hover,
+.notebook column-header.button:active,
+.notebook column-header .button:active,
+.notebook column-header.button:active:hover,
+.notebook column-header .button:active:hover,
+.notebook column-header.button:active:hover:focus,
+.notebook column-header .button:active:hover:focus,
+.notebook column-header.button:active:focus,
+.notebook column-header .button:active:focus {
+   border-image: linear-gradient(to top,
+                                  alpha(black,0.45),
+                                  shade(@theme_base_color, 0.7) 8%,
+                                  shade(@theme_base_color, 0.2)
+                                  ) 0 1 1 0;
+    border-width: 0 1px 1px 0;
+    border-radius: 0;
+    border-style: solid;
+    border-color: black;
+    box-shadow: inset 1px 0 alpha(white, 0.033);
+}
+/*
+column-header.button:backdrop,
+column-header .button:backdrop,
+column-header.button:hover:backdrop,
+column-header .button:hover:backdrop,
+column-header.button:focus:backdrop,
+column-header .button:focus:backdrop,
+column-header.button:focus:hover:backdrop,
+column-header .button:focus:hover:backdrop,
+column-header.button:active:backdrop,
+column-header .button:active:backdrop,
+column-header.button:active:hover:backdrop,
+column-header .button:active:hover:backdrop,
+column-header.button:active:focus:backdrop,
+column-header .button:active:focus:backdrop,
+column-header.button:active:focus:hover:backdrop,
+column-header .button:active:focus:hover:backdrop,
+column-header.button:insensitive:backdrop,
+column-header .button:insensitive:backdrop {
+	border-image: none;
+    border-radius: 0px;
+    border-width: 0px 1px 1px 0px;
+    border-style: solid;
+    border-color: transparent;
+}*/
+/*
+.notebook column-header.button:backdrop,
+.notebook column-header .button:backdrop,
+.notebook column-header.button:hover:backdrop,
+.notebook column-header .button:hover:backdrop,
+.notebook column-header.button:focus:backdrop,
+.notebook column-header .button:focus:backdrop,
+.notebook column-header.button:focus:hover:backdrop,
+.notebook column-header .button:focus:hover:backdrop,
+.notebook column-header.button:active:backdrop,
+.notebook column-header .button:active:backdrop,
+.notebook column-header.button:active:hover:backdrop,
+.notebook column-header .button:active:hover:backdrop,
+.notebook column-header.button:active:hover:focus:backdrop,
+.notebook column-header .button:active:hover:focus:backdrop,
+.notebook column-header.button:active:focus:backdrop,
+.notebook column-header .button:active:focus:backdrop,
+.notebook column-header.button:insensitive:backdrop,
+.notebook column-header .button:insensitive:backdrop {
+   border-image: url("borders/column/notebook-column-header-backdrop.svg") 0 0 1 0 / 0px 0px 1px 0px stretch;
+    border-radius: 0px;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: transparent;
+    box-shadow: inset 1px 0 alpha(@inset_light_color, 0.3),
+				inset -1px 0 alpha(@inset_dark_color, 0.14);
+}*/
+
+column-header.button:insensitive,
+column-header .button:insensitive {
+   border-image: linear-gradient(to top,
+                                  mix(@insensitive_borders, @insensitive_bg_color, 0.5),
+                                  @insensitive_bg_color
+                                  ) 0 1 1 0;
+    border-width: 0 1px 1px 0;
+    border-radius: 0;
+    border-style: solid;
+    border-color: transparent;
+}
+/*
+.notebook column-header.button:insensitive,
+.notebook column-header .button:insensitive {
+   border-image: url("borders/column/notebook-column-header.svg") 0 0 1 0 / 0px 0px 1px 0px stretch;
+    border-radius: 0px;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: transparent;
+    box-shadow: inset 1px 0 @inset_light_color,
+				inset -1px 0 alpha(@inset_dark_color, 0.45);
+}*/
+
+column-header.button:last-child,
+column-header:last-child .button,
+column-header.button:last-child:hover,
+column-header:last-child .button:hover,
+column-header.button:last-child:focus,
+column-header:last-child .button:focus,
+column-header.button:last-child:focus:hover,
+column-header:last-child .button:focus:hover,
+column-header.button:last-child:active,
+column-header:last-child .button:active,
+column-header.button:last-child:active:hover,
+column-header:last-child .button:active:hover,
+column-header.button:last-child:active:hover:focus,
+column-header:last-child .button:active:hover:focus,
+column-header.button:last-child:active:focus,
+column-header:last-child .button:active:focus {
+    border-right-width: 0;
+}
+
+.notebook column-header.button:last-child,
+.notebook column-header:last-child .button,
+.notebook column-header.button:last-child:hover,
+.notebook column-header:last-child .button:hover,
+.notebook column-header.button:last-child:focus,
+.notebook column-header:last-child .button:focus,
+.notebook column-header.button:last-child:focus:hover,
+.notebook column-header:last-child .button:focus:hover,
+.notebook column-header.button:last-child:active,
+.notebook column-header:last-child .button:active,
+.notebook column-header.button:last-child:active:hover,
+.notebook column-header:last-child .button:active:hover,
+.notebook column-header.button:last-child:active:hover:focus,
+.notebook column-header:last-child .button:active:hover:focus,
+.notebook column-header.button:last-child:active:focus,
+.notebook column-header:last-child .button:active:focus {
+    border-right-width: 0;
+}
+/*
+column-header.button:last-child:backdrop,
+column-header:last-child .button:backdrop,
+column-header.button:last-child:hover:backdrop,
+column-header:last-child .button:hover:backdrop,
+column-header.button:last-child:focus:backdrop,
+column-header:last-child .button:focus:backdrop,
+column-header.button:last-child:focus:hover:backdrop,
+column-header:last-child .button:focus:hover:backdrop,
+column-header.button:last-child:active:backdrop,
+column-header:last-child .button:active:backdrop,
+column-header.button:last-child:active:hover:backdrop,
+column-header:last-child .button:active:hover:backdrop,
+column-header.button:last-child:active:hover:focus:backdrop,
+column-header:last-child .button:active:hover:focus:backdrop,
+column-header.button:last-child:active:focus:backdrop,
+column-header:last-child .button:active:focus:backdrop {
+    border-left-width: 0;
+    border-image-width: 0px;
+    box-shadow: inset 1px 0 alpha(@inset_light_color, 0.3);
+}*/
+/*
+.notebook column-header.button:last-child:backdrop,
+.notebook column-header:last-child .button:backdrop,
+.notebook column-header.button:last-child:hover:backdrop,
+.notebook column-header:last-child .button:hover:backdrop,
+.notebook column-header.button:last-child:focus:backdrop,
+.notebook column-header:last-child .button:focus:backdrop,
+.notebook column-header.button:last-child:focus:hover:backdrop,
+.notebook column-header:last-child .button:focus:hover:backdrop,
+.notebook column-header.button:last-child:active:backdrop,
+.notebook column-header:last-child .button:active:backdrop,
+.notebook column-header.button:last-child:active:hover:backdrop,
+.notebook column-header:last-child .button:active:hover:backdrop,
+.notebook column-header.button:last-child:active:hover:focus:backdrop,
+.notebook column-header:last-child .button:active:hover:focus:backdrop,
+.notebook column-header.button:last-child:active:focus:backdrop,
+.notebook column-header:last-child .button:active:focus:backdrop {
+   border-image: url("borders/column/notebook-column-header-backdrop.svg") 0 1 1 0 / 0px 1px 1px 0px stretch;
+    border-radius: 0px;
+    border-width: 0px 1px 1px 0px;
+    border-style: solid;
+    border-color: transparent;
+    box-shadow: inset 1px 0 alpha(@inset_light_color, 0.3);
+}*/
+
+column-header.button:first-child,
+column-header:first-child .button,
+column-header.button:first-child:hover,
+column-header:first-child .button:hover,
+column-header.button:first-child:focus,
+column-header:first-child .button:focus,
+column-header.button:first-child:focus:hover,
+column-header:first-child .button:focus:hover,
+column-header.button:first-child:active,
+column-header:first-child .button:active,
+column-header.button:first-child:active:hover,
+column-header:first-child .button:active:hover,
+column-header.button:first-child:active:hover:focus,
+column-header:first-child .button:active:hover:focus,
+column-header.button:first-child:active:focus,
+column-header:first-child .button:active:focus {
+    box-shadow: none;
+}
+
+.notebook column-header.button:first-child,
+.notebook column-header:first-child .button,
+.notebook column-header.button:first-child:hover,
+.notebook column-header:first-child .button:hover,
+.notebook column-header.button:first-child:focus,
+.notebook column-header:first-child .button:focus,
+.notebook column-header.button:first-child:focus:hover,
+.notebook column-header:first-child .button:focus:hover,
+.notebook column-header.button:first-child:active,
+.notebook column-header:first-child .button:active,
+.notebook column-header.button:first-child:active:hover,
+.notebook column-header:first-child .button:active:hover,
+.notebook column-header.button:first-child:active:hover:focus,
+.notebook column-header:first-child .button:active:hover:focus,
+.notebook column-header.button:first-child:active:focus,
+.notebook column-header:first-child .button:active:focus {
+   box-shadow: none;
+}
+/*
+column-header.button:first-child:backdrop,
+column-header:first-child .button:backdrop,
+column-header.button:first-child:hover:backdrop,
+column-header:first-child .button:hover:backdrop,
+column-header.button:first-child:focus:backdrop,
+column-header:first-child .button:focus:backdrop,
+column-header.button:first-child:focus:hover:backdrop,
+column-header:first-child .button:focus:hover:backdrop,
+column-header.button:first-child:active:backdrop,
+column-header:first-child .button:active:backdrop,
+column-header.button:first-child:active:hover:backdrop,
+column-header:first-child .button:active:hover:backdrop,
+column-header.button:first-child:active:hover:focus:backdrop,
+column-header:first-child .button:active:hover:focus:backdrop,
+column-header.button:first-child:active:focus:backdrop,
+column-header:first-child .button:active:focus:backdrop {
+    border-right-width: 0;
+    border-left-width: 1px;
+    border-image-width: 0px;
+    box-shadow: inset -1px 0 alpha(@inset_dark_color,0.12);
+}*/
+/*
+.notebook column-header.button:first-child:backdrop,
+.notebook column-header:first-child .button:backdrop,
+.notebook column-header.button:first-child:hover:backdrop,
+.notebook column-header:first-child .button:hover:backdrop,
+.notebook column-header.button:first-child:focus:backdrop,
+.notebook column-header:first-child .button:focus:backdrop,
+.notebook column-header.button:first-child:focus:hover:backdrop,
+.notebook column-header:first-child .button:focus:hover:backdrop,
+.notebook column-header.button:first-child:active:backdrop,
+.notebook column-header:first-child .button:active:backdrop,
+.notebook column-header.button:first-child:active:hover:backdrop,
+.notebook column-header:first-child .button:active:hover:backdrop,
+.notebook column-header.button:first-child:active:hover:focus:backdrop,
+.notebook column-header:first-child .button:active:hover:focus:backdrop,
+.notebook column-header.button:first-child:active:focus:backdrop,
+.notebook column-header:first-child .button:active:focus:backdrop {
+   border-image: url("borders/column/notebook-column-header-backdrop.svg") 0 0 1 1 / 0px 0px 1px 1px stretch;
+    border-radius: 0px;
+    border-width: 0px 0px 1px 1px;
+    border-style: solid;
+    border-color: transparent;
+    box-shadow: inset -1px 0 alpha(@inset_dark_color,0.12);
+}*/
+
+/* Selection-Mode Toolbar Buttons */
+.selection-mode.toolbar .button,
+.selection-mode.toolbar .button:active,
+.selection-mode.toolbar .button:active:hover,
+.selection-mode.toolbar .suggested-action.button,
+.selection-mode.toolbar GtkToolButton.suggested-action .button {
+    border-image: url("borders/button/selection-toolbar-button.svg") 5 / 5px stretch;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.selection-mode.toolbar .suggested-action.button,
+.selection-mode.toolbar GtkToolButton.suggested-action .button {
+    border-image: url("borders/button/suggested-action-button.svg") 5 / 5px stretch;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.selection-mode.toolbar .button:hover,
+.selection-mode.toolbar .suggested-action.button:hover,
+.selection-mode.toolbar GtkToolButton.suggested-action .button:hover {
+    border-image: url("borders/button/selection-toolbar-button-hover.svg") 4 / 4px stretch;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
