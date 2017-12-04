@@ -30,7 +30,7 @@ Extract this directory to your themes directory.
 ```console
 $ mkdir -p ~/.themes/
 $ cd ~/.themes/
-$ git clone git@github.com:tlhunter/nucleocide-gtk.git .
+$ git clone git@github.com:tlhunter/nucleocide-gtk.git
 # If using XFCE:
 $ xfce4-appearance-settings
 ```
